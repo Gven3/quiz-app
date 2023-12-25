@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/bg.jpg") center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 65%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  font-size: 16px;
+  color: #8b8eab;
+  background-color: #343964;
+  border-radius: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.levels {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.levels > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2e4f3;
+  background-color: #393f6e;
+}
+
+.activeLevel {
+  background: linear-gradient(#e65895, #bc6be8);
+}
+
+.quiz {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.quiz > h1 {
+  width: 65%;
+  text-align: center;
+  color: #e2e4f3;
+}
+
+.answers {
+  width: 100%;
+  padding: 0 150px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 90px 90px;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+
+.answers > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border: none;
+  font-size: 20px;
+  background: #393f6e;
+  color: #e2e4f3;
+  border-radius: 20px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.answers > button:hover {
+  background: linear-gradient(#e65895, #bc6be8);
+}
+
+.disable > button {
+  cursor: not-allowed;
+}
+.disable > button:hover {
+  background: #393f6e;
+}
+
+.nextDiv > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 20px;
+  background: linear-gradient(#e65895, #bc6be8);
+  border-radius: 10px;
+  color: #e2e4f3;
+  cursor: pointer;
+  padding: 6px 20px;
+}
+
+.congrats {
+  width: 28%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+  font-size: 16px;
+  color: #8b8eab;
+  background-color: #343964;
+  border-radius: 16px;
+  padding-bottom: 5%;
+  display: none;
+}
+.congrats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.congrats h1,
+h2 {
+  width: 100%;
+  text-align: center;
+  color: #e2e4f3;
+}
+.congrats > img {
+  width: 100%;
+}
+
+.congrats > button {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 20px;
+  background: linear-gradient(#e65895, #bc6be8);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 20px 20px;
+  position: relative;
+}
